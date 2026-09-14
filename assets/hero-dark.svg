@@ -1,0 +1,34 @@
+<!-- Hero estatico por decisao: nenhum elemento de conteudo depende de animacao para
+     aparecer. O unico elemento animado e o cursor, cujo primeiro quadro ja e visivel. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="290" viewBox="0 0 880 290" role="img" aria-label="Fernando Figueiredo — analise de dados, Python, SQL e machine learning">
+  <title>Fernando Figueiredo — analise de dados, Python, SQL e machine learning</title>
+  <style>
+    .m   { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+    .dim { fill: #8B949E; }
+    .txt { fill: #E6EDF3; }
+    .acc { fill: #3FB8AF; }
+  </style>
+
+  <rect x="0.75" y="0.75" width="878.5" height="288.5" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+
+    <line x1="1" y1="38" x2="879" y2="38" stroke="#30363D" stroke-width="1.5"/>
+    <circle cx="24" cy="19.5" r="4.5" fill="#30363D"/>
+    <circle cx="40" cy="19.5" r="4.5" fill="#30363D"/>
+    <circle cx="56" cy="19.5" r="4.5" fill="#30363D"/>
+    <text class="m dim" x="80" y="24" font-size="12.5">fernando@dados — python 3.12</text>
+
+    <text class="m" x="32" y="74" font-size="14.5"><tspan class="acc">$</tspan><tspan class="txt" dx="9">boot --profile</tspan></text>
+
+    <text class="m" x="32" y="106" font-size="14.5"><tspan class="acc">▸</tspan><tspan class="dim" dx="9">contexto</tspan><tspan class="dim" dx="8">······</tspan><tspan class="txt" dx="8">dez anos convertendo informação em resposta</tspan></text>
+    <text class="m" x="32" y="130" font-size="14.5"><tspan class="acc">▸</tspan><tspan class="dim" dx="9">stack</tspan><tspan class="dim" dx="8">·········</tspan><tspan class="txt" dx="8">python · sql · pandas · scikit-learn</tspan></text>
+    <text class="m" x="32" y="154" font-size="14.5"><tspan class="acc">▸</tspan><tspan class="dim" dx="9">objetivo</tspan><tspan class="dim" dx="8">······</tspan><tspan class="txt" dx="8">transformar pergunta de negócio em decisão</tspan></text>
+
+    <line x1="32" y1="182" x2="848" y2="182" stroke="#30363D" stroke-width="1.5"/>
+
+    <text class="m txt" x="32" y="228" font-size="31" letter-spacing="1.5" font-weight="700">FERNANDO FIGUEIREDO</text>
+    <text class="m dim" x="33" y="258" font-size="14">análise de dados · python · sql · machine learning</text>
+    <rect x="33" y="270" width="9" height="3" fill="#3FB8AF" opacity="1">
+      <animate attributeName="opacity" values="1;0" dur="1.1s" calcMode="discrete"
+               begin="1.9s" repeatCount="indefinite"/>
+    </rect>
+</svg>

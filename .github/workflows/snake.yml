@@ -1,0 +1,44 @@
+# Gera a animação da cobra percorrendo o gráfico de contribuições.
+#
+# ESTADO: desativado de propósito.
+# Hoje o grafo de contribuições está vazio, e a cobra atravessaria uma grade
+# cinza — o que comunica inatividade em vez de trabalho. Ative apenas quando:
+#   1. os commits estiverem sendo contabilizados no grafo;
+#   2. "Include private contributions on my profile" estiver ligado
+#      (Settings → Public profile → Contributions & Activity);
+#   3. o bloco TRACK B do README.md estiver descomentado.
+#
+# Para ativar o agendamento diário, descomente as três linhas de "schedule".
+# Enquanto isso, o workflow só roda se for disparado manualmente
+# (aba Actions → Gerar snake → Run workflow).
+
+name: Gerar snake
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gerar os SVGs a partir do gráfico de contribuições
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?palette=github-light
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Publicar no branch output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
