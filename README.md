@@ -10,7 +10,7 @@
   <img alt="pergunta, evidência, decisão — análise de dados com Python, SQL e estatística" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=3FB8AF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;Python+%C2%B7+SQL+%C2%B7+pandas+%C2%B7+estat%C3%ADstica+%C2%B7+machine+learning;dez+anos+traduzindo+an%C3%A1lise+para+quem+decide">
 </a>
 
-**Analista de Dados | Data Analyst** | SQL · Python · Business Intelligence (BI) | IA & Machine Learning | Data Storytelling | 10+ anos em Comunicação Estratégica
+**Analista de Dados | Data Analyst** | SQL · Python · Business Intelligence (BI) | IA & Machine Learning | Data Storytelling | 10+ anos em Comunicação Estratégica<br>
 Aberto a vagas de Análise de Dados (incluindo júnior) e posições de entrada em Data Science
 
 <img alt="Python" src="https://img.shields.io/badge/Python-3FB8AF?style=flat-square&logo=python&logoColor=0D1117">
