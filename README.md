@@ -7,8 +7,8 @@
 </p>
 
 <p>
-  <img alt="SQL" src="https://img.shields.io/badge/SQL-151C2B?style=flat-square&labelColor=151C2B">
-  <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-151C2B?style=flat-square&logo=powerbi&logoColor=A970FF">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-151C2B?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0E5NzBGRiI%2BPGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjgiIHJ5PSIzIi8%2BPHBhdGggZD0iTTQgOHY0YzAgMS42NiAzLjU4IDMgOCAzczgtMS4zNCA4LTNWOGMwIDEuNjYtMy41OCAzLTggM3MtOC0xLjM0LTgtM3oiLz48cGF0aCBkPSJNNCAxNHY0YzAgMS42NiAzLjU4IDMgOCAzczgtMS4zNCA4LTN2LTRjMCAxLjY2LTMuNTggMy04IDNzLTgtMS4zNC04LTN6Ii8%2BPC9zdmc%2B">
+  <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-151C2B?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0E5NzBGRiI%2BPHJlY3QgeD0iMyIgeT0iMTMiIHdpZHRoPSI1IiBoZWlnaHQ9IjgiIHJ4PSIxIi8%2BPHJlY3QgeD0iOS41IiB5PSI4IiB3aWR0aD0iNSIgaGVpZ2h0PSIxMyIgcng9IjEiLz48cmVjdCB4PSIxNiIgeT0iMyIgd2lkdGg9IjUiIGhlaWdodD0iMTgiIHJ4PSIxIi8%2BPC9zdmc%2B">
   <img alt="Python" src="https://img.shields.io/badge/Python-151C2B?style=flat-square&logo=python&logoColor=A970FF">
   <img alt="Machine Learning" src="https://img.shields.io/badge/Machine%20Learning-151C2B?style=flat-square&logo=scikitlearn&logoColor=A970FF">
 </p>
