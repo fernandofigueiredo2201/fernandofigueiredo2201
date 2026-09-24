@@ -2,14 +2,16 @@
 
 <img alt="Fernando Figueiredo — análise de dados e business intelligence" src="assets/hero.svg" width="100%">
 
-<a href="https://www.linkedin.com/in/fernandofigueiredoalves/">
-  <img alt="pergunta, evidência, decisão — análise de dados com SQL, Power BI, Python e machine learning" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=00E5FF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;SQL+%C2%B7+Power+BI+%C2%B7+Python+%C2%B7+Machine+Learning;10%2B+anos+em+Comunica%C3%A7%C3%A3o%2C+Estrat%C3%A9gia+e+Storytelling">
-</a>
+<p>
+  <a href="https://www.linkedin.com/in/fernandofigueiredoalves/"><img alt="pergunta, evidência, decisão — análise de dados com SQL, Power BI, Python e machine learning" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=00E5FF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;SQL+%C2%B7+Power+BI+%C2%B7+Python+%C2%B7+Machine+Learning;10%2B+anos+em+Comunica%C3%A7%C3%A3o%2C+Estrat%C3%A9gia+e+Storytelling"></a>
+</p>
 
-<img alt="SQL" src="https://img.shields.io/badge/SQL-151C2B?style=flat-square&labelColor=151C2B">
-<img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-151C2B?style=flat-square&logo=powerbi&logoColor=A970FF">
-<img alt="Python" src="https://img.shields.io/badge/Python-151C2B?style=flat-square&logo=python&logoColor=A970FF">
-<img alt="Machine Learning" src="https://img.shields.io/badge/Machine%20Learning-151C2B?style=flat-square&logo=scikitlearn&logoColor=A970FF">
+<p>
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-151C2B?style=flat-square&labelColor=151C2B">
+  <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-151C2B?style=flat-square&logo=powerbi&logoColor=A970FF">
+  <img alt="Python" src="https://img.shields.io/badge/Python-151C2B?style=flat-square&logo=python&logoColor=A970FF">
+  <img alt="Machine Learning" src="https://img.shields.io/badge/Machine%20Learning-151C2B?style=flat-square&logo=scikitlearn&logoColor=A970FF">
+</p>
 
 </div>
 
