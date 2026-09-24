@@ -1,145 +1,173 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Fernando Figueiredo — análise de dados, Python, SQL e machine learning" src="assets/hero-dark.svg" width="100%">
-</picture>
+<img alt="Fernando Figueiredo — análise de dados com SQL, Power BI, Python e machine learning" src="assets/hero.svg" width="100%">
 
 <a href="https://www.linkedin.com/in/fernandofigueiredoalves/">
-  <img alt="pergunta, evidência, decisão — análise de dados com Python, SQL e estatística" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=3FB8AF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;Python+%C2%B7+SQL+%C2%B7+pandas+%C2%B7+estat%C3%ADstica+%C2%B7+machine+learning;dez+anos+traduzindo+an%C3%A1lise+para+quem+decide">
+  <img alt="pergunta, evidência, decisão — análise de dados com SQL, Power BI, Python e machine learning" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=00E5FF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;SQL+%C2%B7+Power+BI+%C2%B7+Python+%C2%B7+Machine+Learning;10%2B+anos+em+Comunica%C3%A7%C3%A3o%2C+Estrat%C3%A9gia+e+Storytelling">
 </a>
 
 **Analista de Dados | Data Analyst** | SQL · Python · Business Intelligence (BI) | IA & Machine Learning | Data Storytelling | 10+ anos em Comunicação Estratégica<br>
 Aberto a vagas de Análise de Dados (incluindo júnior) e posições de entrada em Data Science
 
-<img alt="Python" src="https://img.shields.io/badge/Python-3FB8AF?style=flat-square&logo=python&logoColor=0D1117">
-<img alt="SQL" src="https://img.shields.io/badge/SQL-3FB8AF?style=flat-square&logoColor=0D1117">
-<img alt="pandas" src="https://img.shields.io/badge/pandas-3FB8AF?style=flat-square&logo=pandas&logoColor=0D1117">
-<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-3FB8AF?style=flat-square&logo=scikitlearn&logoColor=0D1117">
+<img alt="SQL" src="https://img.shields.io/badge/SQL-151C2B?style=flat-square&labelColor=151C2B">
+<img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-151C2B?style=flat-square&logo=powerbi&logoColor=A970FF">
+<img alt="Python" src="https://img.shields.io/badge/Python-151C2B?style=flat-square&logo=python&logoColor=A970FF">
+<img alt="Machine Learning" src="https://img.shields.io/badge/Machine%20Learning-151C2B?style=flat-square&logo=scikitlearn&logoColor=A970FF">
 
 </div>
 
 ---
 
-## `$ whoami`
-
-Transformo informação em resposta há dez anos. A diferença é que agora faço isso com Python, SQL e estatística.
-
-Na EPTV, afiliada da Rede Globo, meu trabalho foi converter contexto disperso — comportamento de audiência, indicadores de alcance, metas comerciais — em entregas que precisavam funcionar e ser medidas. Em 2025, foram **900 peças**, um modelo de produção interna que gerou **R$ 1,5 milhão de economia** e **redução de 83% no custo** frente à terceirização. Nada disso veio de intuição: veio de entender a pergunta certa antes de produzir a resposta.
-
-Análise não é manipular tabelas. É entender o que está sendo perguntado, investigar a evidência, descartar o que não se sustenta e comunicar algo que alguém consiga usar para decidir. A parte técnica dessa cadeia venho construindo de forma estruturada; a outra metade eu já trago pronta — traduzir análise para quem decide. É a diferença entre entregar um notebook e entregar uma resposta.
-
-Mestre em Cinema pela Universidade da Beira Interior (Portugal) e autor de um livro sobre narrativa cinematográfica — formação que me deu método de pesquisa e leitura crítica de evidência.
-
----
-
-## `$ python -i perfil.py`
+## `$ python -i bio.py`
 
 ```python
+"""Bio executável: o perfil como dado, e o programa que o lê."""
+
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import NewType
 
-from pandas import DataFrame
-
-Decisao = NewType("Decisao", str)  # uma resposta que alguém consegue usar
+import pandas as pd
 
 
 @dataclass(frozen=True)
 class Perfil:
-    nome: str = "Fernando Figueiredo"
-    busca: str = "Analista de Dados · entrada em Data Science"
-    nucleo: tuple[str, ...] = ("Python", "SQL", "pandas", "estatística")
-    diferencial: str = "dez anos traduzindo análise para quem decide"
+    nome: str
+    base: str
+    competencias: tuple[str, ...]
+    stack: tuple[str, ...]
+    foco: tuple[str, ...]
 
 
-def responder(pergunta: str, dados: DataFrame) -> Decisao:
-    """O trabalho não começa no dado. Começa na pergunta certa."""
-    return (
-        dados
-        # o que falta, o que se repete, o que mente
-        .pipe(auditar)
-        .pipe(explorar, guiado_por=pergunta)
-        .pipe(modelar, se=exige_previsao(pergunta))
-        .pipe(descartar, o_que="não se sustenta na evidência")
-        .pipe(traduzir, para="quem precisa decidir")
+fernando = Perfil(
+    nome="Fernando Figueiredo",
+    base="10+ anos em Comunicação, Estratégia de Conteúdo e Storytelling",
+    competencias=(
+        "Análise de Dados",
+        "Pensamento Analítico",
+        "Comunicação Estratégica",
+    ),
+    stack=("SQL", "Power BI", "Python", "Machine Learning"),
+    foco=(
+        "Analista de Dados",
+        "Data Analytics",
+        "Business Intelligence Analyst",
+        "Product Analyst",
+        "Marketing Analytics",
+    ),
+)
+
+# Repertório em formato longo: um domínio, uma habilidade por linha.
+repertorio = pd.DataFrame(
+    {
+        "dominio": ["Comunicação", "Comunicação", "Dados", "Dados"],
+        "habilidade": ["narrativa", "estratégia", "análise", "machine learning"],
+    }
+)
+
+
+def bloco(titulo: str, corpo: str) -> None:
+    print(f"\n\n{titulo}")
+    print(corpo)
+
+
+def espacado(itens: Iterable[str]) -> str:
+    return "\n\n".join(itens)
+
+
+def bio(p: Perfil, repertorio: pd.DataFrame) -> None:
+    leitura = repertorio.groupby("dominio", sort=False)["habilidade"].agg(" · ".join)
+
+    print(f"\n{p.nome.upper()}")
+    print("=" * 64)
+
+    bloco("BASE", f"  {p.base}")
+    bloco("COMPETÊNCIAS", f"  {' · '.join(p.competencias)}")
+    bloco("STACK", f"  {' · '.join(p.stack)}")
+    bloco("FOCO", espacado(f"  → {cargo}" for cargo in p.foco))
+    bloco(
+        "LEITURA DOS DADOS",
+        "\n" + espacado(f"  {dominio:<14} {hab}" for dominio, hab in leitura.items()),
     )
+    bloco(
+        "HIPÓTESE",
+        espacado(
+            (
+                "  Comunicação + narrativa + pensamento analítico",
+                "  = capacidade de transformar informação em entendimento.",
+            )
+        ),
+    )
+    bloco("OUTPUT", "  transformar dados em respostas.")
+
+
+if __name__ == "__main__":
+    bio(fernando, repertorio)
 ```
 
----
+<details>
+<summary><b>saída</b></summary>
 
-## `$ pip list --core`
+```text
+FERNANDO FIGUEIREDO
+================================================================
 
-| Camada | Ferramentas |
-|---|---|
-| **Dados** | Python · SQL · pandas · NumPy · Parquet |
-| **Análise** | estatística descritiva · análise exploratória (EDA) · validação de hipótese |
-| **Visualização** | Matplotlib · comunicação de resultado para não-técnicos |
-| **Machine Learning** | scikit-learn · regressão · classificação · avaliação e calibração de modelos |
 
-Poucas tecnologias, todas efetivamente usadas. A lista cresce quando houver projeto que a sustente.
+BASE
+  10+ anos em Comunicação, Estratégia de Conteúdo e Storytelling
 
-## `$ which`
 
-`git` · `pytest` · `jupyter` · `venv` / `pip` · `sqlite` · `parquet`
+COMPETÊNCIAS
+  Análise de Dados · Pensamento Analítico · Comunicação Estratégica
 
-Controle de versão com histórico legível, teste automatizado e ambiente isolado por projeto — hábito de trabalho, não vitrine.
 
----
+STACK
+  SQL · Power BI · Python · Machine Learning
 
-## `$ ls -l ~/projetos`
 
-Repositórios ainda privados enquanto o portfólio é montado. Nenhum link aqui leva a uma página fechada — a publicação acontece quando cada projeto sustentar a própria leitura.
+FOCO
+  → Analista de Dados
 
-### `milha201` — mistério investigativo em SQL e Python
+  → Data Analytics
 
-**Problema.** Bancos de dados gerados por código vazam a própria solução. No benchmark de referência da categoria, uma consulta sobre o *comprimento* dos depoimentos devolve o conjunto de pistas relevante inteiro — sem que o jogador precise entender nada do caso.
+  → Business Intelligence Analyst
 
-**Abordagem.** Escrever a suíte que tenta quebrar o gerador **antes** de gerar qualquer dado: dez ataques que buscam separar enredo de ruído usando só propriedades de forma — comprimento, raridade, compressibilidade, padrão de nulos, granularidade de carimbo de tempo. Geração semeada e reprodutível; invariantes com catálogo de defeitos declarados; varredura lexical contra publicação acidental da solução.
+  → Product Analyst
 
-**Stack.** Python · SQLite · Parquet · pytest
+  → Marketing Analytics
 
-**Estado.** 37 tabelas, três estratos de artefato, orçamento de 10 MB respeitado. O build atual está **reprovado pela própria suíte**: 48 de 270 ataques recuperam o conjunto essencial acima do acaso. A correção do gerador é o trabalho em curso. *Repositório privado.*
 
-### `mercado-dados-brasil` — 276 vagas, coleta primária
+LEITURA DOS DADOS
 
-**Problema.** Decidir trilha de estudo com evidência, em vez de opinião de rede social.
+  Comunicação    narrativa · estratégia
 
-**Abordagem.** Coleta de 276 vagas reais de Dados e IA no Brasil em janela de 30 dias, deduplicação por identificador, 25 grupos de palavras-chave com aliases cruzados contra o texto integral de cada vaga, análise de frequência e de concentração por empregador.
+  Dados          análise · machine learning
 
-**Stack.** Python · pandas · coleta via API
 
-**Resultado.** 171 empresas distintas; 41,3% das vagas concentradas em consultorias; MLOps citado em 41,7% contra 14,9% de scikit-learn/XGBoost. Limitações declaradas junto com os números — teto de resultados da fonte, e menção em descrição não equivale a exigência real. *Repositório privado.*
+HIPÓTESE
+  Comunicação + narrativa + pensamento analítico
 
-### `datasys` — do dataset à decisão
+  = capacidade de transformar informação em entendimento.
 
-**Problema.** Análises exploratórias repetem os mesmos erros: vazamento de dado, troca de métrica depois de ver o resultado, validação cruzada embaralhada em dado com entidade repetida — que mede memorização, não generalização.
 
-**Abordagem.** Um sistema em que as regras críticas são arquitetura, não recomendação: máquina de estados com pontos de trava, holdout selado por verificação automática, métrica congelada antes da modelagem, baseline obrigatório antes de qualquer modelo complexo, divisão temporal quando há tempo no dado.
-
-**Stack.** Python · pandas · scikit-learn · pytest · JSON Schema
-
-**Estado.** Quatro marcos concluídos: esqueleto executável, leitura de dados, exploração assistida célula a célula e travamento da formulação do problema. *Repositório privado.*
-
----
-
-## `$ cat objetivos.md`
-
-```console
-[ aprendendo  ]  estatística aplicada · avaliação de modelos · SQL analítico
-[ construindo ]  portfólio público de análise de dados — um projeto por vez
-[ aplicando   ]  método de investigação a problemas de negócio movidos a dado
+OUTPUT
+  transformar dados em respostas.
 ```
 
-**Formação técnica**
+</details>
+
+---
+
+## `$ cat formacao.md`
+
+**Formação técnica em dados**
 
 | Área | Formação | Instituição |
 |---|---|---|
 | Python | Curso completo de Python | Curso em Vídeo — Gustavo Guanabara |
-| SQL | CS50's Introduction to Databases with SQL | Harvard University |
+| SQL | CS50's Databases with SQL | Harvard University |
+| Power BI | Microsoft Certified: Power BI Data Analyst Associate | Microsoft |
 | Análise de Dados | Formação Analista de Dados | Asimov Academy |
 | Machine Learning | Machine Learning Specialization | DeepLearning.AI · Stanford University |
-| Data Science | Data Science & Machine Learning | Asimov Academy |
 
 ---
 
@@ -151,8 +179,6 @@ linkedin  in/fernandofigueiredoalves
 ```
 
 [**LinkedIn**](https://www.linkedin.com/in/fernandofigueiredoalves/) · [**E-mail**](mailto:fernandofigueiredo123@gmail.com)
-
-Aberto a conversas sobre vagas e projetos.
 
 <!--
   TRACK B — seção de métricas do GitHub.
@@ -167,13 +193,9 @@ Aberto a conversas sobre vagas e projetos.
 ## `$ git log --stat`
 
 <div align="center">
-<img alt="Estatísticas do GitHub de Fernando Figueiredo" src="https://github-readme-stats.vercel.app/api?username=fernandofigueiredo2201&show_icons=true&hide=stars,issues&hide_border=true&bg_color=00000000&title_color=3FB8AF&icon_color=3FB8AF&text_color=8B949E">
-<img alt="Gráfico de atividade de contribuições" src="https://github-readme-activity-graph.vercel.app/graph?username=fernandofigueiredo2201&hide_border=true&bg_color=00000000&color=8B949E&line=3FB8AF&point=3FB8AF&area=true">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake.svg">
-  <img alt="Animação da cobra percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake.svg">
-</picture>
+<img alt="Estatísticas do GitHub de Fernando Figueiredo" src="https://github-readme-stats.vercel.app/api?username=fernandofigueiredo2201&show_icons=true&hide=stars,issues&hide_border=true&bg_color=00000000&title_color=00E5FF&icon_color=A970FF&text_color=AAB8CC">
+<img alt="Gráfico de atividade de contribuições" src="https://github-readme-activity-graph.vercel.app/graph?username=fernandofigueiredo2201&hide_border=true&bg_color=00000000&color=AAB8CC&line=00E5FF&point=A970FF&area=true">
+<img alt="Animação da cobra percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake-dark.svg">
 </div>
 -->
 
