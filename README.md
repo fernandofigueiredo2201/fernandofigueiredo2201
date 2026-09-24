@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="Fernando Figueiredo — análise de dados com SQL, Power BI, Python e machine learning" src="assets/hero.svg" width="100%">
+<img alt="Fernando Figueiredo — análise de dados e business intelligence" src="assets/hero.svg" width="100%">
 
 <a href="https://www.linkedin.com/in/fernandofigueiredoalves/">
   <img alt="pergunta, evidência, decisão — análise de dados com SQL, Power BI, Python e machine learning" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&pause=1200&duration=3600&color=00E5FF&center=true&vCenter=true&width=720&height=44&lines=pergunta+%E2%86%92+evid%C3%AAncia+%E2%86%92+decis%C3%A3o;an%C3%A1lise+de+dados+orientada+a+decis%C3%A3o+de+neg%C3%B3cio;SQL+%C2%B7+Power+BI+%C2%B7+Python+%C2%B7+Machine+Learning;10%2B+anos+em+Comunica%C3%A7%C3%A3o%2C+Estrat%C3%A9gia+e+Storytelling">
@@ -21,7 +21,7 @@ Aberto a vagas de Análise de Dados (incluindo júnior) e posições de entrada 
 ## `$ python -i bio.py`
 
 ```python
-"""Bio executável: o perfil como dado, e o programa que o lê."""
+"""Bio executável"""
 
 from collections.abc import Iterable
 from dataclasses import dataclass
@@ -198,9 +198,3 @@ linkedin  in/fernandofigueiredoalves
 <img alt="Animação da cobra percorrendo o gráfico de contribuições" src="https://raw.githubusercontent.com/fernandofigueiredo2201/fernandofigueiredo2201/output/snake-dark.svg">
 </div>
 -->
-
----
-
-<div align="center">
-<sub><code>fernando@dados ~ %</code> análise não é manipular tabelas — é responder a uma pergunta que alguém precisa decidir</sub>
-</div>
